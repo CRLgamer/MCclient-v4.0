@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Leaderboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan's Math Work - Art</title>
+  <meta name="Jordansmathwork" />
+  <meta content="Jordansmathwork" property="og:title">
+  <meta content="Jordan's math work is a comprehensive educational platform designed to help students master various mathematical concepts. With a user-friendly interface, it offers a wide range of resources, including video tutorials, interactive practice problems, and detailed explanations. Jordan, an experienced math tutor and educator, provides clear and concise lessons that break down complex concepts into manageable steps. The platform also offers personalized learning tools, allowing students to track their progress and identify areas for improvement. Overall, Jordansmathwork offers a dynamic and engaging learning experience for students of all levels." property="og:description">
+  <link rel="icon" href="/assets/images/jmw.png" />
+  <link rel="shortcut icon" href="/assets/images/jmw.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ8CVXYBF9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-TQ8CVXYBF9');
+  </script>
     <style>
         .leaderboard-container {
             width: 90%;
             max-width: 600px;
             overflow-y: auto;
         }
-        
+
         .leaderboard-title {
             font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
-            color: #7FDBFF; /* Light cosmic blue */
+            color: #fff;
         }
-        
+
         .leaderboard-item {
           height:150px;
-          display: flex;
-          background-color: #1a1a2e; /* Dark navy, space night */
-          border-radius: 10px;
-          margin-bottom: 15px;
-          overflow: hidden;
-          box-shadow: 0 4px 15px rgba(58, 66, 86, 0.8); /* subtle glowing shadow */
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            background-color: var(--navbar);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        
+
         .leaderboard-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px #00fff7; /* bright cyan glow on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
         }
-        
+
         .game-image {
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border-right: 2px solid #00f0ff; /* neon space border */
         }
-        
+
         .game-details {
             flex: 1;
             padding: 10px 15px;
-            color: #c7d2fe; /* soft lavender-blue */
         }
-        
+
         .game-title {
             font-size: 1.2rem;
             font-weight: bold;
             margin: 0;
-            color: #00ffe7; /* bright aqua */
+            color: #00d8ff;
         }
-        
+
         .game-winner, .game-score {
             margin: 5px 0;
             font-size: 0.9rem;
         }
-        
+
         .game-winner {
-            color: #ffd700; /* keep golden for winner text, like stars */
+            color: #ffd700;
         }
-        
+
         .game-score {
-            color: #7fffdb; /* minty greenish-blue */
+            color: #27ae60;
         }
-        
         a {
-            color: var(--txtcolor);
-        }
-        body[theme="classic"] {
-            background: radial-gradient(circle at center, #000014, #000022 80%, #0b0c1a 100%);
-            color: #a6c8ff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
+            color:var(--txtcolor);
         }
     </style>
 </head>
