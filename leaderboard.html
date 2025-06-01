@@ -9,73 +9,68 @@
             width: 90%;
             max-width: 600px;
             overflow-y: auto;
-            margin: 0 auto;
-            padding-top: 30px;
         }
-
+        
         .leaderboard-title {
             font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
-            color: #7FDBFF; /* neon blue like a star */
+            color: #7FDBFF; /* Light cosmic blue */
         }
-
+        
         .leaderboard-item {
-            height: 150px;
-            display: flex;
-            background-color: #0b0c1a; /* very dark navy/space black */
-            border-radius: 10px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(56, 118, 203, 0.8); /* subtle blue glow */
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+          height:150px;
+          display: flex;
+          background-color: #1a1a2e; /* Dark navy, space night */
+          border-radius: 10px;
+          margin-bottom: 15px;
+          overflow: hidden;
+          box-shadow: 0 4px 15px rgba(58, 66, 86, 0.8); /* subtle glowing shadow */
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-
+        
         .leaderboard-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(117, 185, 255, 0.9); /* stronger glow on hover */
+            box-shadow: 0 6px 20px #00fff7; /* bright cyan glow on hover */
         }
-
+        
         .game-image {
             width: 150px;
             height: 150px;
             object-fit: cover;
-            filter: drop-shadow(0 0 5px #4a90e2); /* faint blue glow around images */
+            border-right: 2px solid #00f0ff; /* neon space border */
         }
-
+        
         .game-details {
             flex: 1;
             padding: 10px 15px;
+            color: #c7d2fe; /* soft lavender-blue */
         }
-
+        
         .game-title {
             font-size: 1.2rem;
             font-weight: bold;
             margin: 0;
-            color: #82cfff; /* soft glowing blue */
+            color: #00ffe7; /* bright aqua */
         }
-
-        .game-winner,
-        .game-score {
+        
+        .game-winner, .game-score {
             margin: 5px 0;
             font-size: 0.9rem;
-            color: #b3d4fc; /* lighter blue for text */
         }
-
+        
         .game-winner {
-            color: #ffd700; /* gold/yellow like distant stars */
+            color: #ffd700; /* keep golden for winner text, like stars */
         }
-
+        
         .game-score {
-            color: #9fffcf; /* teal-ish, like aurora colors */
+            color: #7fffdb; /* minty greenish-blue */
         }
-
+        
         a {
-            color: #80e1ff; /* bright sky blue for links */
-            text-decoration: underline;
+            color: var(--txtcolor);
         }
-
         body[theme="classic"] {
             background: radial-gradient(circle at center, #000014, #000022 80%, #0b0c1a 100%);
             color: #a6c8ff;
